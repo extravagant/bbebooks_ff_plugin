@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<RDF:RDF
+  xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+  xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description
+    RDF:about="urn:mozilla:install-manifest"
+    em:id="by-isbn@bbebooks.co.cc"
+    em:name="Lookup by ISBN"
+    em:version="1.0.20120128.1950"
+    em:description="Lookup the selection as an ISBN using bbebooks.co.cc"
+    em:creator="abstractsyntax3@gmail.com"
+    em:homepageURL="http://bbebooks.co.cc/firefox">
+    <em:targetApplication>
+      <Description>
+        <!-- firefox -->
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>3.5</em:minVersion>
+        <em:maxVersion>12.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </RDF:Description>
+</RDF:RDF>

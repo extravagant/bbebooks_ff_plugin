@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<overlay 
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    id="bbebooks_by_isbn_overlay">
+  <script
+    type="application/x-javascript"
+    src="chrome://bbebooks_by_isbn/content/overlay.js"/>
+  <keyset>
+    <key
+      id="bbebooks-selection"
+      modifiers="accel shift"
+      keycode="VK_F8"
+      oncommand="bbebooks_by_isbn.showSelection();"/>
+  </keyset>
+  <popup
+    id="contentAreaContextMenu">
+    <menuitem id="bbebooks_by_isbn_menuitem"
+      label="Show bbeBooks.cc"
+      class="menuitem-iconic"
+      insertafter="context-selectall"
+      key="bbebooks-selection"
+      oncommand="bbebooks_by_isbn.showSelection();"/>
+  </popup>
+</overlay>
